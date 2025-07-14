@@ -1,60 +1,406 @@
 * {
-  margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
   font-family: Arial, sans-serif;
+  
 }
 
-body {
-  background: #000;
-  color: #fff;
-}
-
-/* Navigation */
-header {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding: 20px 50px;
+nav {
+  /* height: 25vh; */
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  background: rgba(0, 0, 0, 0.6);
-}
+  justify-content: space-around;
+  border-bottom: 1px solid grey;
+  padding: 20px 0;
+  /* margin-right: 50px; */
 
+}
 .logo {
+  font-family: "Dancing Script", serif;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 800;
+  justify-content: center;
+  align-content: center;
+  color: coral;
 }
 
-.nav-links {
-  list-style: none;
+.navlinks {
   display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  text-transform: uppercase;
+  
 }
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links a {
+.navlinks a{
   text-decoration: none;
+  color: #f4f4f4;
+}
+
+/* .hero-section {
+  background-image: url("../images/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+} */
+
+.hero-section{
+ 
+  height: 100%;
+}
+
+.back{
+  background-image: url("../images/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.welcome-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  
+}
+
+.welcome-h1 {
+  font-size: 4rem;
   color: white;
+}
+
+.welcome-p {
+  font-size: 1rem;
+  color: white;
+}
+
+.welcome-button {
+  background-color: coral;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.about {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ /* border: 1px solid red; */
+ margin-left: 120px;
+ column-gap: 0;
+ margin-top: 50px;
+ gap: 10px;
+ 
+}
+
+.story{
+  margin-top: 110px;
+}
+
+.story h2{
+  text-align: center;
+  background-color: rgba(230, 83, 29, 0.514);
+}
+.about-img img{
+  height: 60vh;
+  width: 55%;
+  border-radius: 5px;
+}
+
+.about-text h1{
   font-size: 16px;
+}
+
+.about-text a{
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  background: coral;
+  border-radius: 32px;
+  color: white;
+}
+
+.about-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  
+  
+  /* justify-items: center; */
+  /* margin-right: 50px; */
+}
+
+ul li{
+  list-style-type: none;
+}
+
+.about-text *{
+  font-size: 14px;
+}
+
+.about-text span{
+  width: 75%;
+  text-align: justify;
+}
+
+
+.mission {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.mission-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.mission-header p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.mission-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.mission-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.mission-text {
+  max-width: 50%;
+}
+
+.mission-text h3 {
+  color: coral;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.mission-text p {
+  font-size: 16px;
+  color: coral;
+  margin-bottom: 20px;
+}
+
+.mission-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
   transition: 0.3s;
 }
 
-.nav-links a:hover {
-  color: cyan;
+.mission-button:hover {
+  background: coral;
 }
 
-/* Hero Section */
-.hero {
-  position: relative;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* text-align: center; */
+  background-color: white;
+}
+
+.team-section {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(253, 90, 30, 0.562);
+  margin-top: 100px;
+}
+
+.team-section h2 {
+  margin-bottom: 20px;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.team-member {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.team-member img {
   width: 100%;
-  height: 100vh;
-  background: url(../images/1.jpg) no-repeat center center/cover;
+  max-width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.team-member p {
+  color: grey;
+  font-size: 0.9em;
+}
+
+.portfolio-section {
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+}
+
+.portfolio-section h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto); 
+  gap: 15px; 
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white
+} */
+
+.pricing {
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  background-image: url("../images/pexels-sergiolalala-23363587.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.package {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  text-align: center;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+h3 {
+  margin: 5px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  margin: 15px 0;
+}
+
+button {
+  background-color: coral;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgba(155, 54, 17, 0.514);
+}
+
+.contact-us {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  padding:20px;
+  background-color: #F26936;
+  text-align: center;
+}
+
+.contact-ad {
+  background: coral;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; 
+  padding: 50px 20px;
+  background-color:rgba(0, 0, 0, 0.205);
+}
+
+.contact-phn {
+  background: coral;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.contact-email{
+  background: coral;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
 }
