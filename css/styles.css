@@ -114,7 +114,7 @@ nav.scrolled {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, rgba(255, 107, 71, 0.4), rgba(44, 44, 84, 0.4)), url("./images/1.jpg");
+  background: linear-gradient(135deg, rgba(255, 107, 71, 0.4), rgba(44, 44, 84, 0.4)), url("../images/1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
