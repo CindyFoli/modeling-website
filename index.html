@@ -5,192 +5,294 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modeling Agency</title>
     <link rel="stylesheet" href="./css/styles.css"/>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   </head>
   <body>
-    <div class="back">
-      <section class="hero-section">
-        <nav>
-          <h1 class="logo">cfmodels</h1>
-          <div>
-            <ul class="navlinks">
-              <a href="">Home</a>
-              <a href="">About Us</a>
-              <a href="">Portfolio</a>
-              <a href="">Testimonials</a>
-              <a href="">Blog</a>
-              <a href="">Contact</a>
-            </ul>
-          </div>
-        </nav>
-  
-        <div class="welcome-address">
-          <h1 class="welcome-h1">Wanna Be On Top?!</h1>
-          <p class="welcome-p">Join Us! Let The World Be Your Runway!</p>
-          <button class="welcome-button">join</button>
+    <!-- Navigation -->
+    <nav>
+      <h1 class="logo">cfmodels</h1>
+      <div class="nav-container">
+        <ul class="navlinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
         </div>
-      </section>
-    </div>
+      </div>
+    </nav>
 
-    <div class="story">
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-overlay"></div>
+      <div class="welcome-address">
+        <h1 class="welcome-h1">Wanna Be On Top?!</h1>
+        <p class="welcome-p">Join Us! Let The World Be Your Runway!</p>
+        <button class="welcome-button">join</button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="story" id="about">
       <h2>About Us</h2>
-
-      <section class="about">
+      <div class="about">
         <div class="about-img">
-          <img src="./images/p2.jpg">
+          <img src="./images/p2.jpg" alt="About our modeling agency">
         </div>
         <div class="about-text">
-          
           <h1>Do You Have What It Takes?</h1>
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-            pulvinar luctus sem, eget porta orci. Maecenas molestie dui id diam
-            feugiat, eu tincidunt mauris aliquam. Duis commodo vitae ligula et
-            interdum. 
-          </span>
+          <p>
+            We're a premier modeling agency dedicated to discovering and nurturing new talent. 
+            Our team of industry professionals will guide you through every step of your modeling career.
+          </p>
           <ul>
-            What We Look For In A Model
-            <li>✔️ghdgdhhu jhsjdhsd jhsdhjsd jdbsjkjsdn</li>
-            <li>✔️ghdgdhhu jhsjdhsd jhsdhjsd jdbsjkjsdn</li>
-            <li>✔️ghdgdhhu jhsjdhsd jhsdhjsd jdbsjkjsdn</li>
-            <li>✔️ghdgdhhu jhsjdhsd jhsdhjsd jdbsjkjsdn</li>
+            <h3>What We Look For In A Model</h3>
+            <li><i class="fas fa-check"></i> Unique look and strong presence</li>
+            <li><i class="fas fa-check"></i> Professional attitude and work ethic</li>
+            <li><i class="fas fa-check"></i> Confidence and adaptability</li>
+            <li><i class="fas fa-check"></i> Willingness to learn and grow</li>
           </ul>
         </div>
-    </section>
-    <div class="story">
-      <h2>Our Mission</h2>
+      </div>
 
-      <section class="about">
-        <div class="about-img">
-          <img src="./images/2.jpg" alt="">
-        </div>
-        <div class="about-text" id="mission">
-          
-          <h1>How Our Story Begun</h1>
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-            pulvinar luctus sem, eget porta orci. Maecenas molestie dui id diam
-            feugiat, eu tincidunt mauris aliquam. Duis commodo
-          </span>
-          
-            
-            <span>
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-             pulvinar luctus sem, eget porta orci. Maecenas molestie dui id
-             diam
-            </span>
-           <a href="#">Learn More</a>
-        
-    </section>
-
-    </div>
-
-    
-
-    <!-- <section class="mission">
-      <div class="mission container">
-        <div class="mission-content">
-          <div class="mission-image">
-            <img src="./images/pexels-shotpot-6338305.jpg" alt="picture 2">
-        </div>
-        <div class="mission-header">
-          <h4>Our Mission</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-            pulvinar luctus sem, eget porta orci. Maecenas molestie dui id diam
-            feugiat, eu tincidunt mauris aliquam. Duis commodo
-          </p>
-          <div class="Mission-text">
-            <h5>The World is Our Runway</h5>
+      <div class="story">
+        <h2>Our Mission</h2>
+        <div class="about">
+          <div class="about-img">
+            <img src="./images/2.jpg" alt="Our mission">
+          </div>
+          <div class="about-text" id="mission">
+            <h1>How Our Story Begun</h1>
             <p>
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-             pulvinar luctus sem, eget porta orci. Maecenas molestie dui id
-             diam
-           </p>
-           <a href="#" class="mission-button">Learn More</a>
-         </div>
+              Founded in 2010, we started with a vision to revolutionize the modeling industry by 
+              focusing on diversity and authenticity. Today, we represent some of the most sought-after 
+              models in the fashion world.
+            </p>
+            <p>
+              Our mission is to empower aspiring models by providing them with the tools, training, 
+              and opportunities needed to succeed in this competitive industry.
+            </p>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <section class="team-section">
+    <!-- Team Section -->
+    <section class="team-section" id="team">
       <h2>Meet Our Team</h2>
       <div class="team-container">
+        <!-- Team members will be added here -->
         <div class="team-member">
-          <img src="./images/prf1.jpg" alt="Member 1">
+          <img src="./images/prf1.jpg" alt="John Doe">
           <h3>John Doe</h3>
-          <p>Backend Developer</p>
+          <p>Creative Director</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
         </div>
         <div class="team-member">
-          <img src="./images/prf2.jpg" alt="Member 2">
+          <img src="./images/prf2.jpg" alt="Jane Smith">
           <h3>Jane Smith</h3>
-          <p>Frontend Developer</p>
+          <p>Model Scout</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
         </div>
         <div class="team-member">
-          <img src="./images/prf3.jpg" alt="Member 3">
+          <img src="./images/prf3.jpg" alt="Mike Johnson">
           <h3>Mike Johnson</h3>
-          <p>UI/UX Designer</p>
+          <p>Photographer</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
         </div>
         <div class="team-member">
-          <img src="./images/prf4.jpg" alt="Member 4">
+          <img src="./images/prf4.jpg" alt="Sarah Lee">
           <h3>Sarah Lee</h3>
-          <p>Project Manager</p>
-        </div>
-        <div class="team-member">
-          <img src="./images/pexels-august-de-richelieu-4427620.jpg" alt="Member 5">
-          <h3>David Brown</h3>
-          <p>DevOps Engineer</p>
-        </div>
-        <div class="team-member">
-          <img src="./images/prf5.jpg" alt="Member 6">
-          <h3>Emily White</h3>
-          <p>Software Tester</p>
-        </div>
-        <div class="team-member">
-          <img src="./images/prf 7.jpg" alt="Member 7">
-          <h3>Chris Wilson</h3>
-          <p>Data Scientist</p>
-        </div>
-        <div class="team-member">
-          <img src="./images/prf 8.jpg" alt="Member 8">
-          <h3>Anna Green</h3>
-          <p>Marketing Specialist</p>
+          <p>Stylist</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
         </div>
       </div>
     </section>
     
-    <section class="portfolio-section">
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
       <h2>Our Portfolio</h2>
       <div class="portfolio-container">
         <div class="portfolio-item" onclick="openModal('./images/prt 1.jpg')">
-          <img src="./images/prt 1.jpg" alt="Project 1">
+          <img src="./images/prt 1.jpg" alt="Fashion Project 1">
+          <div class="portfolio-overlay">
+            <h3>New York Fashion Week</h3>
+          </div>
         </div>
         <div class="portfolio-item" onclick="openModal('./images/prt2.jpg')">
-          <img src="./images/prt2.jpg" alt="Project 2">
+          <img src="./images/prt2.jpg" alt="Fashion Project 2">
+          <div class="portfolio-overlay">
+            <h3>Paris Runway</h3>
+          </div>
         </div>
         <div class="portfolio-item" onclick="openModal('./images/prt3.jpg')">
-          <img src="./images/prt3.jpg" alt="Project 3">
+          <img src="./images/prt3.jpg" alt="Fashion Project 3">
+          <div class="portfolio-overlay">
+            <h3>Vogue Cover Shoot</h3>
+          </div>
         </div>
         <div class="portfolio-item" onclick="openModal('./images/prt4.jpg')">
-          <img src="./images/prt4.jpg" alt="Project 4">
+          <img src="./images/prt4.jpg" alt="Fashion Project 4">
+          <div class="portfolio-overlay">
+            <h3>Cosmopolitan Feature</h3>
+          </div>
         </div>
         <div class="portfolio-item" onclick="openModal('./images/prt5.jpg')">
-          <img src="./images/prt5.jpg" alt="Project 5">
+          <img src="./images/prt5.jpg" alt="Fashion Project 5">
+          <div class="portfolio-overlay">
+            <h3>Gucci Campaign</h3>
+          </div>
         </div>
         <div class="portfolio-item" onclick="openModal('./images/prt6.jpg')">
-          <img src="./images/prt6.jpg" alt="Project 6">
-        </div>
-        <div class="portfolio-item" onclick="openModal('./images/pexels-peter-ohis-322737401-13729108.jpg')">
-          <img src="./images/pexels-peter-ohis-322737401-13729108.jpg" alt="Project 7">
-        </div>
-        <div class="portfolio-item" onclick="openModal('./images/pexels-talyse-anir-294201350-13233448.jpg')">
-          <img src="./images/pexels-talyse-anir-294201350-13233448.jpg" alt="Project 8">
+          <img src="./images/prt6.jpg" alt="Fashion Project 6">
+          <div class="portfolio-overlay">
+            <h3>Sports Illustrated</h3>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+      <h2>Our Packages</h2>
+      <div class="pricing-container">
+        <div class="package">
+          <h3>Starter</h3>
+          <div class="price">GHC 199<span>/month</span></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Basic portfolio development</li>
+            <li><i class="fas fa-check"></i> 1 professional photoshoot</li>
+            <li><i class="fas fa-check"></i> Access to casting calls</li>
+            <li><i class="fas fa-check"></i> Monthly coaching session</li>
+          </ul>
+          <button class="package-btn">Get Started</button>
+        </div>
+        <div class="package featured">
+          <div class="featured-badge">Popular</div>
+          <h3>Professional</h3>
+          <div class="price">GHC 499<span>/month</span></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Advanced portfolio development</li>
+            <li><i class="fas fa-check"></i> 4 professional photoshoots</li>
+            <li><i class="fas fa-check"></i> Priority access to casting calls</li>
+            <li><i class="fas fa-check"></i> Weekly coaching sessions</li>
+            <li><i class="fas fa-check"></i> Agency representation</li>
+          </ul>
+          <button class="package-btn">Get Started</button>
+        </div>
+        <div class="package">
+          <h3>Elite</h3>
+          <div class="price">GHC 999<span>/month</span></div>
+          <ul>
+            <li><i class="fas fa-check"></i> Premium portfolio development</li>
+            <li><i class="fas fa-check"></i> Unlimited photoshoots</li>
+            <li><i class="fas fa-check"></i> Exclusive casting opportunities</li>
+            <li><i class="fas fa-check"></i> Daily coaching sessions</li>
+            <li><i class="fas fa-check"></i> Global agency representation</li>
+            <li><i class="fas fa-check"></i> Personal brand manager</li>
+          </ul>
+          <button class="package-btn">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-us" id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Address</h3>
+            <p>123 Avenue, Accra, Ghana</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <h3>Phone</h3>
+            <p>+233 123451234</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>info@cfmodels.com</p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>cfmodels</h3>
+          <p>Your premier modeling agency dedicated to discovering and nurturing the next generation of fashion icons.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter for the latest updates and opportunities.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 CFModels. All Rights Reserved.</p>
+      </div>
+    </footer>
 
     <!-- Image Modal -->
     <div id="imageModal" class="modal">
@@ -198,52 +300,14 @@
         <span class="close" onclick="closeModal()">&times;</span>
         <img id="modalImage" src="" alt="Portfolio Image">
         <div class="modal-nav">
-          <button class="nav-btn prev-btn" onclick="prevImage()">&#8249;</button>
-          <button class="nav-btn next-btn" onclick="nextImage()">&#8250;</button>
+          <button class="nav-btn prev-btn" onclick="prevImage()"><i class="fas fa-chevron-left"></i></button>
+          <button class="nav-btn next-btn" onclick="nextImage()"><i class="fas fa-chevron-right"></i></button>
         </div>
       </div>
     </div>
 
-    <section class="pricing">
-      <div class="package">
-          <h2>Regular</h2>
-          <h3>$19.99/month</h3>
-          <p>Basic features including access to standard tools and support.</p>
-          <button>Buy Package</button>
-      </div>
-      <div class="package">
-          <h2>Premium</h2>
-          <h3>$39.99/month</h3>
-          <p>Additional features, faster support, and premium content.</p>
-          <button>Buy Lesson</button>
-      </div>
-      <div class="package">
-          <h2>Platinum</h2>
-          <h3>$59.99/month</h3>
-          <p>All-inclusive with priority support and exclusive resources.</p>
-          <button>Buy Lesson</button>
-      </div>
-    </section>
-
-    <section class="contact-us">
-      <h2>Contact Us</h2>
-      <div class="contact-container">
-          <div class="contact-ad">
-              <h3>Address</h3>
-              <p>123 Main Street, City, Country</p>
-          </div>
-          <div class="contact-phn">
-              <h3>Phone</h3>
-              <p>+123 456 7890</p>
-          </div>
-          <div class="contact-email">
-              <h3>Email</h3>
-              <p>info@example.com</p>
-          </div>
-      </div>
-    </section>
-
     <script>
+      // Portfolio modal functionality
       const portfolioImages = [
         './images/prt 1.jpg',
         './images/prt2.jpg',
@@ -290,17 +354,58 @@
         }
       });
       
-      // Close modal with Escape key
+      // Keyboard navigation
       document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-          closeModal();
+        const modal = document.getElementById('imageModal');
+        if (modal.style.display === 'flex') {
+          if (e.key === 'Escape') {
+            closeModal();
+          }
+          if (e.key === 'ArrowRight') {
+            nextImage();
+          }
+          if (e.key === 'ArrowLeft') {
+            prevImage();
+          }
         }
-        if (e.key === 'ArrowRight') {
-          nextImage();
+      });
+
+      // Mobile navigation toggle
+      document.querySelector('.hamburger').addEventListener('click', function() {
+        document.querySelector('.navlinks').classList.toggle('active');
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+      // Navbar scroll effect
+      window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
         }
-        if (e.key === 'ArrowLeft') {
-          prevImage();
-        }
+      });
+
+      // Scroll reveal animation
+      const scrollReveal = ScrollReveal({
+        origin: 'bottom',
+        distance: '60px',
+        duration: 1000,
+        delay: 200,
+        reset: true
+      });
+
+      scrollReveal.reveal('.about, .team-container, .portfolio-container, .pricing-container, .contact-container', {
+        interval: 200
       });
     </script>
   </body>
