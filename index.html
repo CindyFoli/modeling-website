@@ -165,16 +165,44 @@
     <section class="portfolio-section">
       <h2>Our Portfolio</h2>
       <div class="portfolio-container">
-        <div class="portfolio-item"><img src="./images/prt 1.jpg" alt="Project 1"></div>
-        <div class="portfolio-item"><img src="./images/prt2.jpg" alt="Project 2"></div>
-        <div class="portfolio-item"><img src="./images/prt3.jpg" alt="Project 3"></div>
-        <div class="portfolio-item"><img src="./images/prt4.jpg" alt="Project 4"></div>
-        <div class="portfolio-item"><img src="./images/prt5.jpg" alt="Project 5"></div>
-        <div class="portfolio-item"><img src="./images/prt6.jpg" alt="Project 6"></div>
-        <div class="portfolio-item"><img src="./images/pexels-peter-ohis-322737401-13729108.jpg" alt="Project 7"></div>
-        <div class="portfolio-item"><img src="./images/pexels-talyse-anir-294201350-13233448.jpg" alt="Project 8"></div>
+        <div class="portfolio-item" onclick="openModal('./images/prt 1.jpg')">
+          <img src="./images/prt 1.jpg" alt="Project 1">
+        </div>
+        <div class="portfolio-item" onclick="openModal('./images/prt2.jpg')">
+          <img src="./images/prt2.jpg" alt="Project 2">
+        </div>
+        <div class="portfolio-item" onclick="openModal('./images/prt3.jpg')">
+          <img src="./images/prt3.jpg" alt="Project 3">
+        </div>
+        <div class="portfolio-item" onclick="openModal('./images/prt4.jpg')">
+          <img src="./images/prt4.jpg" alt="Project 4">
+        </div>
+        <div class="portfolio-item" onclick="openModal('./images/prt5.jpg')">
+          <img src="./images/prt5.jpg" alt="Project 5">
+        </div>
+        <div class="portfolio-item" onclick="openModal('./images/prt6.jpg')">
+          <img src="./images/prt6.jpg" alt="Project 6">
+        </div>
+        <div class="portfolio-item" onclick="openModal('./images/pexels-peter-ohis-322737401-13729108.jpg')">
+          <img src="./images/pexels-peter-ohis-322737401-13729108.jpg" alt="Project 7">
+        </div>
+        <div class="portfolio-item" onclick="openModal('./images/pexels-talyse-anir-294201350-13233448.jpg')">
+          <img src="./images/pexels-talyse-anir-294201350-13233448.jpg" alt="Project 8">
+        </div>
       </div>
     </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Portfolio Image">
+        <div class="modal-nav">
+          <button class="nav-btn prev-btn" onclick="prevImage()">&#8249;</button>
+          <button class="nav-btn next-btn" onclick="nextImage()">&#8250;</button>
+        </div>
+      </div>
+    </div>
 
     <section class="pricing">
       <div class="package">
@@ -195,24 +223,85 @@
           <p>All-inclusive with priority support and exclusive resources.</p>
           <button>Buy Lesson</button>
       </div>
-  </section>
+    </section>
+
+    <section class="contact-us">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+          <div class="contact-ad">
+              <h3>Address</h3>
+              <p>123 Main Street, City, Country</p>
+          </div>
+          <div class="contact-phn">
+              <h3>Phone</h3>
+              <p>+123 456 7890</p>
+          </div>
+          <div class="contact-email">
+              <h3>Email</h3>
+              <p>info@example.com</p>
+          </div>
+      </div>
+    </section>
+
+    <script>
+      const portfolioImages = [
+        './images/prt 1.jpg',
+        './images/prt2.jpg',
+        './images/prt3.jpg',
+        './images/prt4.jpg',
+        './images/prt5.jpg',
+        './images/prt6.jpg',
+        './images/pexels-peter-ohis-322737401-13729108.jpg',
+        './images/pexels-talyse-anir-294201350-13233448.jpg'
+      ];
+      
+      let currentImageIndex = 0;
+      
+      function openModal(imageSrc) {
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        
+        currentImageIndex = portfolioImages.indexOf(imageSrc);
+        modal.style.display = 'flex';
+        modalImage.src = imageSrc;
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function closeModal() {
+        const modal = document.getElementById('imageModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+      
+      function nextImage() {
+        currentImageIndex = (currentImageIndex + 1) % portfolioImages.length;
+        document.getElementById('modalImage').src = portfolioImages[currentImageIndex];
+      }
+      
+      function prevImage() {
+        currentImageIndex = (currentImageIndex - 1 + portfolioImages.length) % portfolioImages.length;
+        document.getElementById('modalImage').src = portfolioImages[currentImageIndex];
+      }
+      
+      // Close modal when clicking outside the image
+      document.getElementById('imageModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeModal();
+        }
+      });
+      
+      // Close modal with Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          closeModal();
+        }
+        if (e.key === 'ArrowRight') {
+          nextImage();
+        }
+        if (e.key === 'ArrowLeft') {
+          prevImage();
+        }
+      });
+    </script>
   </body>
 </html>
-
-<section class="contact-us">
-  <h2>Contact Us</h2>
-  <div class="contact-container">
-      <div class="contact-ad">
-          <h3>Address</h3>
-          <p>123 Main Street, City, Country</p>
-      </div>
-      <div class="contact-phn">
-          <h3>Phone</h3>
-          <p>+123 456 7890</p>
-      </div>
-      <div class="contact-email">
-          <h3>Email</h3>
-          <p>info@example.com</p>
-      </div>
-  </div>
-</section>
