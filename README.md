@@ -10,11 +10,6 @@ Our Packages: Discover tailored plans designed to help models develop and succee
 
 Contact Us: Get in touch with our team for inquiries and collaborations.
 
-Get in Touch
-Email: info@cfmodels.com
 
-Phone: +233 123451234
-
-Location: 123 Avenue, Accra, Ghana
 
 For more details, visit the cfmodels website. https://modelingwebsite.netlify.app/
